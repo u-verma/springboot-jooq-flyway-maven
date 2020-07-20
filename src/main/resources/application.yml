@@ -1,0 +1,14 @@
+#Database Configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/diamond
+    username: diamond
+    password: diamond
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 1000
+      maximum-pool-size: 10
+  jooq:
+    sql-dialect: postgres
+server:
+  port: 8081

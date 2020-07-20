@@ -1,0 +1,13 @@
+version: '3'
+services:
+  postgresql:
+    image: library/postgres:latest
+    container_name: postgres_server
+    environment:
+      POSTGRES_USER: diamond
+      POSTGRES_PASSWORD: diamond
+      POSTGRES_DB: diamond
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/umesh/server/volumes/diamond:/var/lib/postgresql/data
