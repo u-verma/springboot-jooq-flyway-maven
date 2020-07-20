@@ -33,6 +33,7 @@ public class DataSourceConfig {
         hikariConfig.setAutoCommit(true);
         hikariConfig.setTransactionIsolation("TRANSACTION_READ_COMMITTED");
         hikariConfig.setPoolName("diamond-db");
+        hikariConfig.setMaximumPoolSize(maxPoolSize);
         return new HikariDataSource(hikariConfig);
     }
 
