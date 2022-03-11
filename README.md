@@ -1,2 +1,2 @@
-# diamond
-Springboot + Jooq + flyway + hikari datasource
+# Springboot + Jooq + flyway + hikari datasource
+
